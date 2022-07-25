@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!-- 
+// Tim Stott
+// 5/22/2022
+// Assignment 12
+// This code displays a form that will allow the user to add an entry to the database.
+// Reference for help with code: Programming PHP by Kevin Tatroe and Peter MacIntyre and the PHP Manual -->
+
+
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <h1>Add an entry</h1>
+
+    <div class="form-container">
+        <form action="add.php" method="post">
+            <div class="form-element">
+                Title: <input type="text" name="title" required>
+            </div>
+            <div class="form-element">
+                Release Date: <input type="text" name="releaseDate" required maxlength="4" minlength="4">
+            </div>
+            <div class="form-element">
+                Developer: <input type="text" name="developer" required>
+            </div>
+            <div class="form-element">
+                Producer: <input type="text" name="producer" required>
+            </div>
+            <div class="form-element">
+                Sales: <input type="text" name="sales" required>
+            </div>
+            <div class="sbmit">
+                <input type="submit" value="Enter Game">
+            </div>
+        </form>
+    </div>
+
+    <button><a href="index.html">Return Home</a></button>
+</body>
+</html>
+
